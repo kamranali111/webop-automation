@@ -79,7 +79,7 @@
 	<test name="New.test.Project">
 		<classes>
 			<class name="com.webop.common.BrowsersFactory" />
-			<class name="com.webop.testcases.Booking_flow_testcases_1_20" />
+			<class name="com.webop.testcases.Booking_flow_testcases_1_20" /> 
 
 		</classes>
 	</test> <!-- Test -->

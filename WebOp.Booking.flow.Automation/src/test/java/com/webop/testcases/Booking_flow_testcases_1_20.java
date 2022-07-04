@@ -168,7 +168,6 @@ public class Booking_flow_testcases_1_20 extends BrowsersFactory {
 		bookingflow = new Booking_flow_Locators(driver);
 		HelperMethods.waitForPageLoaded();
 		bookingflow.clearButton();
-		Thread.sleep(2000);
 
 		// Phone Number and Address, Cartype, vehicle quality, and Jobtype
 		bookingflow.typeTelephoneNum(Teleno2);

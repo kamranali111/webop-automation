@@ -3,6 +3,7 @@ package com.webop.locators;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -66,14 +67,16 @@ public class Booking_flow_Locators {
 
 	
 	//@FindBy(how = How.XPATH, using = "//div[@id='jobBookingInputs']/div[2]/div[1]/div[1]/div[1]/igx-input-group/div[1]/div/div/input")
-	@FindBy(how = How.XPATH, using = "//*[@id=\"jobBookingInputs\"]/div[2]/div[1]/app-passenger-details/div[2]/div[1]/igx-input-group/div[1]/div/div/input\n")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"jobBookingInputs\"]/div[2]/div[1]/app-passenger-details/div[2]/div[1]/igx-input-group/div[1]/div/div/input")
 		
 	WebElement Telephonenumber;
 
 	public void typeTelephoneNum(String phone) {
 		HelpMethod.waitForElementToBeVisible(Telephonenumber);
-		Telephonenumber.click();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(Telephonenumber).click().build().perform();
 		Telephonenumber.sendKeys(phone);
+	
 	}
 
 	public void EnterTelephonenum() {
@@ -200,17 +203,21 @@ public class Booking_flow_Locators {
 	}
 
 	
-	@FindBy(how = How.XPATH, using = "//*[@id='igx-combo-0']/igx-input-group/div[1]/div/div/input")
+	//@FindBy(how = How.XPATH, using = "//*[@id='igx-combo-0']/igx-input-group/div[1]/div/div/input")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"jobBookingInputs\"]/div[5]/div[1]/div[2]/div[2]/igx-input-group/div[1]/div/div/input")
 	WebElement VehiclesType;
 
 	public void clickOnVehciletype() throws InterruptedException {
 		HelperMethods.waitForElementToBeClickable(VehiclesType);
-		VehiclesType.click();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(VehiclesType).click().build().perform();
+	//	VehiclesType.click();
 		Thread.sleep(2000);
 	}
 
 
-	@FindBy(how = How.XPATH, using = "//input[@placeholder='Enter a Search Term']")
+	// @FindBy(how = How.XPATH, using = "//input[@placeholder='Enter a Search Term']")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"igx-combo-0\"]/igx-input-group/div[1]/div/div/input")
 	WebElement VehicleFeature;
 	
 	public void clearFeature() {
@@ -227,17 +234,22 @@ public class Booking_flow_Locators {
 	public void typvehcilesFeature(String vehfeature) {
 		
 		HelpMethod.waitForElementToBeVisible(VehicleFeature);
-		VehicleFeature.click();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(VehicleFeature).click().build().perform();
+		//	VehicleFeature.click();
 		VehicleFeature.sendKeys(vehfeature);
 	}
 
 	
-	@FindBy(how = How.XPATH, using = "//*[@id='igx-drop-down-item-9']")
+	//@FindBy(how = How.XPATH, using = "//*[@id='igx-drop-down-item-9']")
+	@FindBy(how = How.XPATH, using = "//*[@id=\\\"igx-combo-0\\\"]/igx-input-group/div[1]/div/div/input")
+	
 	WebElement SelectFeature;
 	
 	public void selectVehFeature() throws InterruptedException {
 		HelperMethods.waitForElementToBeClickable(SelectFeature);
-		SelectFeature.click();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(SelectFeature).click().build().perform();
 		Thread.sleep(1000);
 	}
 

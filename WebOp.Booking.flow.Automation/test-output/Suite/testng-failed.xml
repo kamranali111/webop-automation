@@ -52,30 +52,11 @@
     <classes>
       <class name="com.webop.testcases.Booking_flow_testcases_1_20">
         <methods>
-          <include name="Booked_Job_20" invocation-numbers="0"/>
-          <include name="startBrowser"/>
-          <include name="Booked_Job_6" invocation-numbers="0"/>
-          <include name="Booked_Job_9" invocation-numbers="0"/>
-          <include name="Booked_Job_16" invocation-numbers="0"/>
-          <include name="Booked_Job_11" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="Booked_Job_14" invocation-numbers="0"/>
-          <include name="Booked_Job_17" invocation-numbers="0"/>
-          <include name="Booked_Job_12" invocation-numbers="0"/>
-          <include name="Booked_Job_10" invocation-numbers="0"/>
-          <include name="Booked_Job_13" invocation-numbers="0"/>
-          <include name="Booked_Job_19" invocation-numbers="0"/>
           <include name="Emerald_Lunched" invocation-numbers="0"/>
-          <include name="Booked_Job_15" invocation-numbers="0"/>
-          <include name="Booked_Job_18" invocation-numbers="0"/>
+          <include name="startBrowser"/>
           <include name="Booked_Job_with_Normal_flow_1" invocation-numbers="0"/>
-          <include name="Booked_Job_2" invocation-numbers="0"/>
-          <include name="Booked_Job_7" invocation-numbers="0"/>
           <include name="valid_login" invocation-numbers="0"/>
-          <include name="Booked_Job_8" invocation-numbers="0"/>
-          <include name="Booked_Job_5" invocation-numbers="0"/>
-          <include name="Booked_Job_3" invocation-numbers="0"/>
-          <include name="Booked_Job_4" invocation-numbers="0"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.webop.testcases.Booking_flow_testcases_1_20 -->
     </classes>
